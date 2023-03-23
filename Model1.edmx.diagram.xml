@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="add09dfa8e8b40f28ff426f218f5660c" Name="Diagram1">
+        <EntityTypeShape EntityType="eBITModel.inventory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBITModel.order" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eBITModel.product_category" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="eBITModel.FK__inventory__categ__68487DD7" />
+        <EntityTypeShape EntityType="eBITModel.customer_address" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="eBITModel.customer_contact" Width="1.5" PointX="8.875" PointY="9.125" />
+        <EntityTypeShape EntityType="eBITModel.customer" Width="1.5" PointX="6.625" PointY="0.75" />
+        <EntityTypeShape EntityType="eBITModel.user" Width="1.5" PointX="9.5" PointY="4.75" />
+        <AssociationConnector Association="eBITModel.FK__customer___custo__6B24EA82" />
+        <AssociationConnector Association="eBITModel.FK__customers__addre__6A30C649" />
+        <AssociationConnector Association="eBITModel.FK__customer___custo__6C190EBB" />
+        <AssociationConnector Association="eBITModel.FK__orders__customer__693CA210" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

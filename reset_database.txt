@@ -1,0 +1,63 @@
+﻿#notes copy the code below
+# open your server explorer
+# right click on the connection for your project
+# select add new query tab
+# paste  the selected code into the query tab
+# click on execute to run the queries, the queries will delete all items from inventory and product_category and replace
+# them with new entries.
+
+# copy code below
+
+delete from product_category;
+delete from inventory;
+
+insert into product_category (category_id,category_desc) values 
+(1,'Electronics'),
+(2,'Home'),
+(3,'Toys'),
+(4,'Clothing'),
+(5,'Health'),
+(6,'Other');
+
+
+
+insert into inventory
+ ( item_desc, item_quantity,category_id,list_price,item_cost,item_image,sale_start,sale_end) 
+values
+  ('electronics1', 2,1,1,5,null,'2/27/2023','2/27/2023'), 
+  ('electronics2', 2,1,1,5,null,'2/27/2023','2/27/2023'), 
+  ('electronics3', 2,1,1,5,null,'2/27/2023','2/27/2023'), 
+  ('electronics4', 2,1,1,5,null,'2/27/2023','2/27/2023'), 
+  ('electronics5', 2,1,1,5,null,'2/27/2023','2/27/2023'), 
+ 
+  ('home1', 2,2,2,5,null,'2/27/2023','2/27/2023'), 
+  ('home2', 2,2,2,5,null,'2/27/2023','2/27/2023'), 
+  ('home3', 2,2,2,5,null,'2/27/2023','2/27/2023'), 
+  ('home4', 2,2,2,5,null,'2/27/2023','2/27/2023'), 
+  ('home5', 2,2,2,5,null,'2/27/2023','2/27/2023'), 
+
+  ('toys1', 2,3,3,5,null,'2/27/2023','2/27/2023'), 
+  ('toys2', 2,3,3,5,null,'2/27/2023','2/27/2023'), 
+  ('toys3', 2,3,3,5,null,'2/27/2023','2/27/2023'), 
+  ('toys4', 2,3,3,5,null,'2/27/2023','2/27/2023'), 
+  ('toys5', 2,3,3,5,null,'2/27/2023','2/27/2023'), 
+
+  ('clothing1', 2,4,4,5,null,'2/27/2023','2/27/2023'), 
+  ('clothing2', 2,4,4,5,null,'2/27/2023','2/27/2023'), 
+  ('clothing3', 2,4,4,5,null,'2/27/2023','2/27/2023'), 
+  ('clothing4', 2,4,4,5,null,'2/27/2023','2/27/2023'), 
+  ('clothing5', 2,4,4,5,null,'2/27/2023','2/27/2023'), 
+
+  ('health1', 2,5,5,5,null,'2/27/2023','2/27/2023'), 
+  ('health2', 2,5,5,5,null,'2/27/2023','2/27/2023'), 
+  ('health3', 2,5,5,5,null,'2/27/2023','2/27/2023'), 
+  ('health4', 2,5,5,5,null,'2/27/2023','2/27/2023'), 
+  ('health5', 2,5,5,5,null,'2/27/2023','2/27/2023'), 
+
+  ('other1', 2,6,6,5,null,'2/27/2023','2/27/2023'), 
+  ('other2', 2,6,6,5,null,'2/27/2023','2/27/2023'), 
+  ('other3', 2,6,6,5,null,'2/27/2023','2/27/2023'), 
+  ('other4', 2,6,6,5,null,'2/27/2023','2/27/2023'), 
+  ('other5', 2,6,6,5,null,'2/27/2023','2/27/2023')
+  
+  
